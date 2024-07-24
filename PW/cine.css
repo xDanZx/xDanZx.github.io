@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-align: center
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+#container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr 1fr 1fr 150px;
+    grid-template-areas:
+        "faixa    faixa   faixa"
+        "img1     img4     img7"
+        "img2     img5     img8"
+        "img3     img6     img9"
+        "faixa2   faixa2  faixa2"
+    ;
+}
+
+.imagem1 {
+    display: grid;
+    grid-area: img1;
+    border: 2px solid brown;
+}
+
+.imagem2 {
+    display: grid;
+    grid-area: img2;
+    border: 2px solid brown;
+}
+
+.imagem3 {
+    display: grid;
+    grid-area: img3;
+    border: 2px solid brown;
+}
+
+.imagem4 {
+    display: grid;
+    grid-area: img4;
+    border: 2px solid brown;
+}
+
+.imagem5 {
+    display: grid;
+    grid-area: img5;
+    border: 2px solid brown;
+}
+
+.imagem6 {
+    display: grid;
+    grid-area: img6;
+    border: 2px solid brown;
+}
+
+.imagem7 {
+    display: grid;
+    grid-area: img7;
+    border: 2px solid brown;
+}
+
+.imagem8 {
+    display: grid;
+    grid-area: img8;
+    border: 2px solid brown;
+}
+
+.imagem9 {
+    display: grid;
+    grid-area: img9;
+    border: 2px solid brown;
+    gap: 10px;
+}
+
+
+
+
+#faixa1 {
+    display: grid;
+    background-color: brown;
+    grid-area: faixa;
+    align-items: center;
+}
+
+#faixa2 {
+    background-color: brown;
+    grid-area: faixa2;
+    display: grid;
+    align-items: center;
+}

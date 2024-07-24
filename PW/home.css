@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 300px;
+    grid-template-areas:
+        "faixa  faixa"
+
+        "boxbiografia boxfilmes"
+    ;
+    grid-row-gap: 100px;
+    grid-column-gap: 10px;
+}
+
+.img {
+    display: block;
+
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-align: center
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-align: center
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+#faixa {
+    display: grid;
+    align-items: center;
+    background-color: darkcyan;
+    grid-area: faixa;
+
+}
+
+
+#boxfilmes {
+    margin-right: 25px;
+    display: grid;
+    grid-area: boxfilmes;
+    border: 2px solid darkcyan;
+}
+
+#boxbio {
+    margin-left: 25px;
+    display: grid;
+    grid-area: boxbiografia;
+    border: 2px solid darkcyan;
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 300px 300px;
+        grid-template-areas:
+            "faixa"
+            "boxbiografia"
+            "boxfilmes"
+
+        ;
+
+    }
+
+    #boxfilmes {
+        margin-right: 5px;
+
+    }
+
+    #boxbio {
+        margin-left: 5px;
+
+    }
+}

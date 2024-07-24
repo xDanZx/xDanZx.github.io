@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "faixa1"
+        "texto"
+        "faixa2";
+    grid-gap: 50px;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-align: center;
+
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+#texto {
+    margin-right: 23%;
+    margin-left: 23%;
+}
+
+.imagem2 {
+
+    text-align: center;
+}
+
+#faixa1 {
+    background-color: green;
+    grid-area: faixa1;
+
+    display: grid;
+    align-items: center;
+}
+
+#faixa2 {
+    background-color: green;
+    grid-area: faixa2;
+
+    display: grid;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 600px) {
+    #texto {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #texto {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #texto {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #texto {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
